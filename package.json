@@ -1,11 +1,13 @@
 {
   "name": "textgenerator",
   "version": "0.1.0",
+  "homepage": "http://yvonned.github.io/textgenerator/",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
     "cors": "^2.8.4",
     "express": "^4.16.3",
+    "gh-pages": "^1.1.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1"
@@ -14,6 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   }
 }
